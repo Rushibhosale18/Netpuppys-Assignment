@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tulas International School (TIS) - Homepage Redesign
 
-## Getting Started
+A modern, animated redesign of the Tulas International School homepage focusing on high conversion, fluid animations, and mobile responsiveness.
 
-First, run the development server:
+## 🚀 Live Demo
+
+- **Live URL:** [Insert Vercel / Netlify Link Here]
+- **Repository:** [Insert GitHub Repo Link Here]
+
+## 🛠️ Tech Stack
+
+- **Framework:** Next.js 14 / React.js
+- **Styling:** Tailwind CSS
+- **Animations:** Framer Motion
+- **Deployment:** Vercel
+
+## ✨ Standout Features Implemented
+
+1. **Custom Cursor:** Integrated an interactive, mouse-following ring and dot using Framer Motion's `useSpring`. It scales dynamically when hovering over clickable elements and hides cleanly on touch/mobile devices (`pointer: coarse`).
+2. **Scroll-Triggered Reveals:** Smooth entrance animations for text, images, and cards as they enter the viewport, built using Framer Motion's `useInView`.
+3. **Animated Dark/Light Theme Switcher:** Integrated dark mode using `next-themes` and Tailwind CSS v4, providing an accessible and modern viewing experience.
+4. **Scroll Progress Bar:** A fixed visual indicator at the top of the screen showing reading progress, using Framer Motion's `useScroll`.
+
+## 📦 Getting Started Locally
+
+1. **Clone the repository:**
+
+```bash
+git clone <https://github.com/your-username/tis-homepage-redesign.git>
+cd tis-homepage-redesign
+```
+
+2. **Install dependencies:**
+
+```bash
+npm install
+```
+
+3. **Run the development server:**
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000/) in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Component Architecture Overview
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `components/ui/` - Atomic UI components
+- `components/sections/` - Main page sections (Hero, About, Academics, Testimonials, CTA)
+- `components/animation/` - Animation drivers (ScrollReveal, ScrollProgress)
+- `components/layout/` - Layout components (Navbar, Footer, ThemeProvider, ThemeToggle)
 
-## Learn More
+## Brand Identity Retained
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Primary colors, copy, and structural focus reflect the official school assets from [tis.edu.in](https://tis.edu.in/)
